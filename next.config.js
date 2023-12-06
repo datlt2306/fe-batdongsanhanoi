@@ -10,6 +10,7 @@ const nextConfig = {
       "moc.gov.vn",
       "img.iproperty.com.my",
       "staticfile.batdongsan.com.vn",
+      "file4.batdongsan.com.vn"
     ],
   },
 };

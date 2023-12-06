@@ -9,7 +9,8 @@ import { DeleteImage, upLoadFiles } from "@/app/api/upload";
 import axios from "axios";
 import { useCategoryQuery } from "@/app/Hooks/categories/useCategoriesQuery";
 import { useProjectMutation } from "@/app/Hooks/projects/useProductMutation";
-import { useUserQuery } from "@/app/Hooks/user/infoQuery";
+import { useUserQuery } from "@/app/Hooks/user/useUserQuery";
+
 const AddProject = React.memo(() => {
   const [districts, setDistricts] = useState([]);
   const [wards, setWards] = useState([]);
@@ -19,7 +20,6 @@ const AddProject = React.memo(() => {
   const [selectedWard, setSelectedWard] = useState('');
   const { data } = useUserQuery();
   const idInfoUser = data?.data?.user?._id;
-
 
   const fetchDistricts = async () => {
     try {

@@ -9,7 +9,6 @@ import {
 } from "@/components/ui/table";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import { VND } from "@/app/api/project";
 import Image from "next/image";
 import { AiOutlineDelete } from "react-icons/ai";
 import { VscRequestChanges } from "react-icons/vsc";
@@ -17,6 +16,7 @@ import { MdGroupAdd } from "react-icons/md";
 import { useProjectQuery } from "@/app/Hooks/projects/useProductQuery";
 import { useProjectMutation } from "@/app/Hooks/projects/useProductMutation";
 import Swal from "sweetalert2";
+import { VND } from "@/app/api/projects";
 export default function TableDemo() {
   const { data, isLoading, error } = useProjectQuery();
   const ListAllProject = data?.data?.response?.data;

@@ -24,3 +24,8 @@ export const UpdateProject = (data: any) => {
 export const DeleteProject = (id: any) => {
   return connect_Api.delete(`/projects/${id}`);
 };
+
+export const VND = new Intl.NumberFormat("vi-VN", {
+  style: "currency",
+  currency: "VND",
+});

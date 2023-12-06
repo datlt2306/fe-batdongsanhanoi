@@ -8,8 +8,8 @@ import Image from 'next/image';
 import { Skeleton } from '../ui/skeleton';
 import { IProject } from '@/interfaces/project';
 import { AiOutlineFieldTime } from 'react-icons/ai';
-import { VND } from '@/app/api/project';
 import { useProjectQuery } from '@/app/Hooks/projects/useProductQuery';
+import { VND } from '@/app/api/projects';
 
 
 const RealEstate = () => {

@@ -1,5 +1,6 @@
 "use client"
-import { useUserQuery } from '@/app/Hooks/user/infoQuery';
+
+import { useUserQuery } from '@/app/Hooks/user/useUserQuery';
 import Link from 'next/link';
 const page = () => {
   const { data } = useUserQuery();
